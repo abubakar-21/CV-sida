@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+
+:root {
+    /*   color variables */
+    --hover-color: #9586F3;
+    --primary-color: #cfd8dc;
+    --secondary-color: #f0f7f8;
+    --text-color: #000000;
+    /*   border radius */
+    --radius: 0.2rem;
+  }
+
+.dark-theme{
+    --primary-color: #262929;
+    --secondary-color: #000000;
+    --hover-color: #9586F3;
+    --text-color: #FFFFFF;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Montserrat, sans-serif;
+    background: var(--secondary-color);
+  }
+  
+.nav-list {
+    height: 100%;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+    padding: 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+img{
+    height: 30px;
+  }
+nav{
+  height: 60px;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+  }
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.nav-item:nth-child(2), .nav-item:nth-child(3), .nav-item:nth-child(4) {
+  height: 100%;
+  width: 80px;
+  margin-right: 0;
+  padding-top: 21px;
+  text-align: center;
+  background-color: var(--hover-color);
+}
+.nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover {
+  background-color: var(--primary-color);
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+.nav-item a:hover {
+    color: var(--hover-color);
+  }
+
+.icon{
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+    fill: var(--text-color);   /* rad 7 och 11 i js filen */
+}
+
+.icon:hover{
+    fill: var(--hover-color);
+}
+
+/* .active-nav{
+  color: var(--hover-color);
+} */
